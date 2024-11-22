@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #425a72; */
+  background-image: radial-gradient(circle at top right, rgb(167, 215, 234), rgb(94, 94, 201) 40%) !important;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +29,20 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/clouds.png");
+  background-repeat: no-repeat;
+  background-position: -50rem 5rem;
+  background-size: cover;
+  opacity: .5;
+  z-index: -1;
 }
 
 h1 {
