@@ -6,12 +6,16 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #425a72; */
-  background-image: radial-gradient(circle at top right, rgb(167, 215, 234), rgb(94, 94, 201) 40%) !important;
+  /* background-image: radial-gradient(circle at top right, rgb(167, 215, 234), rgb(94, 94, 201) 40%) !important; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  padding: 0 !important;
 }
 
 a {
@@ -27,6 +31,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: space-between;
   min-width: 320px;
   min-height: 100vh;
   position: relative;

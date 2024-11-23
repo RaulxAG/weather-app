@@ -19,7 +19,7 @@ export default function Search() {
     }, [index])
 
     return (
-        <section>
+        <section className="searchContainer">
             <input type="search" name="search" id="search" placeholder={exampleLocation} />
         </section>
     )
