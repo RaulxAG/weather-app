@@ -7,9 +7,22 @@
     outline: none;
     transition: all .3s linear;
     color: white;
+    letter-spacing: .3rem;
 }
 
 #search::placeholder {
     color: white;
     opacity: .5;
+}
+
+@media screen and (max-width: 768px) {
+    .searchContainer {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #search {
+        font-size: 3rem;
+        width: 100%;
+    }
 }

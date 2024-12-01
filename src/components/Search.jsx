@@ -28,6 +28,7 @@ export default function Search() {
     setExampleLocation(arrayLocations[index]);
   }, [index]);
 
+<<<<<<< HEAD
   useEffect(() => {
     if (!debouncedValue) return;
 
@@ -85,4 +86,11 @@ export default function Search() {
         {!loading && error && <ErrorMessage message={error} />}
     </section>
   );
+=======
+    return (
+        <section className="searchContainer">
+            <input type="search" name="search" id="search" placeholder={exampleLocation} />
+        </section>
+    )
+>>>>>>> d996aa367dc5595480cce09722c5b5296ee6e753
 }

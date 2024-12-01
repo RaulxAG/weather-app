@@ -1,0 +1,53 @@
+header {
+    position: absolute;
+    top: 1rem;
+    left: 25%;
+    z-index: 1;
+    width: 50%;
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credit p {
+    margin: 0;
+}
+
+.credit h2 {
+    margin: 0;
+    text-align: left;
+    font-size: large;
+    color: #9e6ea8;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    font-size: xx-large;
+    color: #d6d6d6;
+    transition: all .3s linear;
+}
+
+.links a:hover, .links a:active, .links a:focus {
+    color: #9e6ea8;
+}
+
+@media screen and (max-width: 1500px) {
+    header {
+        margin: 0 auto;
+        width: 100%;
+        left: 0;
+    }
+
+    header nav {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
