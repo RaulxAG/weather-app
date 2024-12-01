@@ -1,0 +1,14 @@
+.results {
+    background-color: blue;
+    padding: 1rem;
+    width: 90vw;
+}
+
+.results__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.results__grid div {
+    background-color: red;
+}
