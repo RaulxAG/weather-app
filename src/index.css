@@ -46,7 +46,7 @@ body::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/clouds.png");
+  background-image: url("/assets/clouds.webp");
   background-repeat: no-repeat;
   background-position: -50rem 5rem;
   background-size: cover;
