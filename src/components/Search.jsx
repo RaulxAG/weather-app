@@ -28,7 +28,6 @@ export default function Search() {
     setExampleLocation(arrayLocations[index]);
   }, [index]);
 
-<<<<<<< HEAD
   useEffect(() => {
     if (!debouncedValue) return;
 
@@ -61,14 +60,14 @@ export default function Search() {
     <section>
         {!weatherData && !loading && (
             <form onSubmit={(e) => e.preventDefault()}>
-            <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder={exampleLocation}
-                value={searchValue}
-                onChange={(e) => setSearchValue(e.target.value)}
-            />
+              <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder={exampleLocation}
+                  value={searchValue}
+                  onChange={(e) => setSearchValue(e.target.value)}
+              />
             </form>
         )}
 
@@ -77,20 +76,13 @@ export default function Search() {
         )}
 
         {!loading && weatherData && (
-          <>
-            <button onClick={resetState}>Volver</button>
+          <section className='results'>
+            <button onClick={resetState}><i className="fa-solid fa-magnifying-glass"></i></button>
             <SearchResults weatherData={weatherData} />
-          </>
+          </section>
         )}
 
         {!loading && error && <ErrorMessage message={error} />}
     </section>
   );
-=======
-    return (
-        <section className="searchContainer">
-            <input type="search" name="search" id="search" placeholder={exampleLocation} />
-        </section>
-    )
->>>>>>> d996aa367dc5595480cce09722c5b5296ee6e753
 }

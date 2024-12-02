@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: #ffffffde;
   background-color: #425a72;
-  /* background-image: radial-gradient(circle at top right, rgb(167, 215, 234), rgb(94, 94, 201) 40%) !important; */
+  background-image: radial-gradient(circle at top right, #6d89a5, #425a72 40%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +15,10 @@
 }
 
 #root {
-  padding: 0 !important;
+  padding: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 a {
@@ -63,12 +66,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #d6d6d6;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
+  color: #213547 !important;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #714a79;
+  background-color: #9e6ea8;
+  color: #ffffffde !important;
 }
 button:focus,
 button:focus-visible {
@@ -79,6 +85,7 @@ button:focus-visible {
   :root {
     color: #213547;
     background-color: #7098c0;
+    background-image: radial-gradient(circle at top right, #9db5cc, #7098c0 40%);
   }
   /* a:hover {
     color: #747bff;

@@ -1,14 +1,50 @@
 .results {
-    background-color: blue;
     padding: 1rem;
-    width: 90vw;
+    padding-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.results h2 {
+    font-size: xx-large;
+}
+
+.results button {
+    width: fit-content;
+    align-self: flex-end;
 }
 
 .results__grid {
+    gap: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
 }
 
 .results__grid div {
-    background-color: red;
+    width: 250px;
+    height: 250px;
+    background-color: #3b5066c9;
+    background: linear-gradient(180deg, #597a9bc9 0%, #3d546bc9 50%, #597a9bc9 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.results__grid div p:first-child {
+    font-size: x-large;
+    font-weight: bolder;
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+}
+
+.results__grid div p:last-child {
+    font-size: x-large;
+    font-weight: 500;
+    position: absolute;
+    top: 35%;
 }
