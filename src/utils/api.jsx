@@ -1,5 +1,5 @@
 export const fetchWeatherData = async (location) => {
-  const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY
+  const apiKey = import.meta.env.OPENWEATHER
   const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=metric&lang=es`;
   
   const response = await fetch(url);
